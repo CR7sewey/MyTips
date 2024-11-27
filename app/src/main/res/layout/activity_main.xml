@@ -91,83 +91,94 @@
             app:layout_constraintTop_toBottomOf="@id/billTotal" />
 
         <LinearLayout
-            android:id="@+id/tip1"
-            android:layout_width="match_parent"
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
 
-            <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/button2"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:text="0%"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/button"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:text="10%"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+                <Button
+                    android:id="@+id/tip11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button2"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
 
-            <Button
-                android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/tip12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+
+                <Button
+                    android:id="@+id/tip13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:text="20%"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/button"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:text="20%"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tip21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:text="25%"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+
+                <Button
+                    android:id="@+id/tip22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:text="30%"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
+
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/tip2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/button"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:text="25%"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button"
-                android:shadowColor="@color/black"
-                android:shadowDx="5"
-                android:text="30%"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/choseTipLabel" />
-
-        </LinearLayout>
-
         <TextView
             android:id="@+id/splitLabel"
             android:layout_width="wrap_content"
@@ -281,21 +292,24 @@
                 >
 
                 <TextView
+                    android:id="@+id/billFinal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="bill"
+                    android:layout_marginEnd="25dp"
+                    android:text="€00.00"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    />
 
                 <TextView
+                    android:id="@+id/tipFinal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="tip"
+                    android:layout_marginStart="25dp"
+                    android:text="€00.00"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
