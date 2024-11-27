@@ -4,7 +4,10 @@ Is an Android app to help you to calculate the amount of tip and split the table
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
+tip = 0%
 <img src="https://github.com/user-attachments/assets/b246afdd-5ca3-4476-b51b-42426cf8d511" width=260 />
+
+tip = 10%
 <img src="https://github.com/user-attachments/assets/b97070fa-40f1-4aa8-b2db-ec6d69fd9703" width=260 />
 
 
